@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Calculadora Web</title>
+
+    <!-- Conexión con el archivo CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="calculadora">
+      <h1>CALCULADORA</h1>
+
+      <!-- Pantalla donde aparecerán los números -->
+      <input type="text" id="pantalla" value="0" readonly />
+
+      <!-- Botones de la calculadora -->
+      <div class="botones">
+        <button data-action="clear">C</button>
+        <button data-action="operator" data-value="/">÷</button>
+        <button data-action="operator" data-value="*">×</button>
+        <button data-action="backspace">⌫</button>
+
+        <button data-number="7">7</button>
+        <button data-number="8">8</button>
+        <button data-number="9">9</button>
+        <button data-action="operator" data-value="-">-</button>
+
+        <button data-number="4">4</button>
+        <button data-number="5">5</button>
+        <button data-number="6">6</button>
+        <button data-action="operator" data-value="+">+</button>
+
+        <button data-number="1">1</button>
+        <button data-number="2">2</button>
+        <button data-number="3">3</button>
+        <button data-action="equals">=</button>
+
+        <button data-number="0">0</button>
+        <button data-action="decimal">.</button>
+      </div>
+    </main>
+
+    <!-- Conexión con el archivo JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>

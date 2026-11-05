@@ -1,0 +1,131 @@
+/* CONFIGURACION GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* FONDO DE LA PAGINA */
+
+body {
+  font-family: Arial, sans-serif;
+
+  background-color: #e5e7eb;
+
+  background-image:
+    linear-gradient(
+      30deg,
+      transparent 48%,
+      rgba(255, 255, 255, 0.65) 49%,
+      rgba(255, 255, 255, 0.65) 51%,
+      transparent 52%
+    ),
+    linear-gradient(
+      120deg,
+      transparent 48%,
+      rgba(148, 163, 184, 0.15) 49%,
+      rgba(148, 163, 184, 0.15) 51%,
+      transparent 52%
+    ),
+    linear-gradient(135deg, #f1f2f4, #d9dde3);
+
+  background-size:
+    180px 180px,
+    220px 220px,
+    cover;
+
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CONTENEDOR DE LA CALCULADORA */
+.calculadora {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 18px;
+  width: 340px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* TITULO */
+h1 {
+  color: #333333;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+
+/* PANTALLA */
+#pantalla {
+  width: 100%;
+  height: 75px;
+  background: #f5f6f8;
+  border: 1px solid #e1e4e8;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  padding: 15px;
+  color: #333333;
+  font-size: 32px;
+  text-align: right;
+  outline: none;
+}
+
+/* DISTRIBUCION DE LOS BOTONES */
+.botones {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* ESTILO GENERAL DE LOS BOTONES */
+button {
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  background: #eef0f3;
+  color: #333333;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* EFECTO AL PASAR EL MOUSE */
+button:hover {
+  background: #dfe3e8;
+  transform: scale(1.04);
+}
+
+/* BOTONES DE OPERACIONES */
+[data-action="operator"] {
+  background: #e3f0ff;
+  color: #1672c4;
+}
+
+[data-action="operator"]:hover {
+  background: #c9e2ff;
+}
+
+/* BOTON DE BORRAR */
+[data-action="clear"] {
+  background: #ffe5e8;
+  color: #d9364f;
+}
+
+[data-action="clear"]:hover {
+  background: #ffd0d7;
+}
+
+/* BOTON DE RESULTADO */
+[data-action="equals"] {
+  background: #1672c4;
+  color: #ffffff;
+}
+
+[data-action="equals"]:hover {
+  background: #105da3;
+}
